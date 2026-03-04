@@ -199,6 +199,7 @@ enabling fairer comparisons at a shared threshold. The unique catches analysis r
 Given the analysis of the three models, the goal is to create an ensemble that combines their predictions to minimize business cost. After calibration, all three models show comparable overall performance but each uniquely identifies fraud cases the others miss. The question is how to weight each model's contribution to best exploit this diversity.
 
 The optimization problem can be succinctly phrased by the following objective function:
+
 $$\text{minimize}_{w, \tau} \quad \mathcal{L}(w, \tau) = \text{FN}(w, \tau) \times C_{FN} + \text{FP}(w, \tau) \times C_{FP}$$
 
 Where:
